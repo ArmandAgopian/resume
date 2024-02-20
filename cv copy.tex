@@ -1,0 +1,250 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+\usepackage{multicol}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Armand Agopian} \\ \vspace{1pt}
+    \small \href{tel:+19254370071}{925-437-0071} $|$ 
+    \href{mailto:armandagopian457@gmail.com}{\underline{armandagopian457@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/armandagopian}{\underline{linkedin.com/in/armandagopian}}
+\end{center}
+
+\vspace{-0.8cm}
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of California, Santa Cruz}{Mar 2023}
+      {Computer Science, BA}{Dean's Honors W23 - 3.85 GPA}
+      \begin{multicols}{3}
+        \begin{itemize}
+            \item Full-Stack Web Dev II
+            \item Artificial Intelligence
+            \item Applied Machine Learning
+            \item Logic Design
+            \item Mobile Apps
+            \item Technical Writing
+        \end{itemize}
+      \end{multicols}
+      \vspace{-1\baselineskip}
+    \resumeSubheading
+      {Diablo Valley College}{May 2019}
+      {Computer Science, AS}{Academic Honors S19}
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{WeatherML} $|$ \emph{Machine Learning, Express, Google Cloud Platform, Twilio SMS}}{}
+          \resumeItemListStart
+            \resumeItem{On-demand, long-term weather prediction models with SMS texts}
+            \resumeItem{Models are created from a user's text message with location and prediction date}
+            \resumeItem{Models are generalized within their S2 geocell, and cached to reduce computation costs}
+            \resumeItem{A text is sent back with the predicted weather on the given date}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Yumbai - Online Marketplace} $|$ \emph{React, TypeScript, Next.js, TypeGraphQL, Jest, MaterialUI, Postgres, Docker}}{}
+          \resumeItemListStart
+            \resumeItem{Developed an e-commerce platform with 5 other developers organized utilizing agile principles}
+            \resumeItem{Built a GraphQL api using TypeGraphQL for viewing, creating, searching, filtering items and viewing sales statistics}
+            \resumeItem{Fully tested with unit tests and e2e testing using Jest and Playwright}
+            \resumeItem{Microservice architecture: managed 13 containerized repositories using Docker}
+            \resumeItem{Implemented devops pipeline continuous integration and delivery using GitHub Actions in each repository}
+          \resumeItemListEnd
+        \resumeProjectHeading
+          {\textbf{Energi} $|$ \emph{Kotlin Multiplatform Mobile, SwiftUI, HealthKit, Kotlin, HealthConnect}}{}
+          \resumeItemListStart
+            \resumeItem{Test-driven development cross-platform iOS/Android app targeting health stores to showcase health widgets and graphs}
+            \resumeItem{Users can create customizable metrics based on compatible units}
+            \resumeItem{Fully unit and e2e tested with Junit and XCTests}
+            \resumeItem{unit testing integration testing test driven development Implemented Ci/CD using Github Actions}
+          \resumeItemListEnd
+        \resumeProjectHeading
+          {\textbf{TeamLink} $|$ \emph{Kotlin/XML, SwiftUI, React Native}}{}
+          \resumeItemListStart
+            \resumeItem{Slack-style mobile apps written each in Kotlin, Swift, and React Native}
+            \resumeItem{Users communicate over a real-time REST API using async principles}
+            \resumeItem{Fully tested using JUnit, XCTest, and Jest}
+          \resumeItemListEnd
+        \resumeProjectHeading
+          {\textbf{Networked 3D Printers} $|$ \emph{Express, Raspberry PI}}{}
+          \resumeItemListStart
+            \resumeItem{Set up a 10-3D printer farm with automated networking and load balancing}
+            \resumeItem{Each printer has a Raspberry PI with LED status indicators}
+            \resumeItem{Express server load balances each available printer with REST endpoints}
+            \resumeItem{Website created to view the status of each print}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+      
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Fulfillment Operations Team Leader}{Jun 2022 -- Sep 2022}
+      {Target}{}
+      \resumeItemListStart
+        \resumeItem{Led a team of 140 employees to meet daily operational goals within a \$100MM location within the online fulfillment departments}
+        \resumeItem{Executed our digital business expansion, delivering 200\% growth in online sales}
+        \resumeItem{Designed order process dashboards for company-wide, real-time tracking of key metrics, bringing guest wait times down by 250\%}
+        \resumeItem{Realigned all fulfillment departments under a single leadership structure, increasing team efficiency by 35\%}
+        \resumeItem{Led store/department walks with district store director}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Service \& Engagement Team Leader}{Dec 2020 -- Jun 2022}
+      {Target}{}
+      \resumeItemListStart
+        \resumeItem{Managed a team of 120 team members/leaders within the front-end departments}
+        \resumeItem{Promoted to interim Assistant Manager, directing staffing, training, and performance evaluations which positively impacted sales and guest relations to deliver a guest satisfaction score of +19 NPS}
+        \resumeItem{Introduced and implemented a "guest first" mentality when engaging, directly increasing loyalty by 18\%}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Specialty Sales Consultant (Tech and Beauty)}{May 2019 -- Dec 2020}
+      {Target}{}
+      \resumeItemListStart
+        \resumeItem{Guided the tech and beauty teams of 15 people to comp 77\% YoY}
+        \resumeItem{Analyzed current technology trends to build trusting relationships and provide personalized solutions for guests}
+        \resumeItem{Partnered with vendors to plan and execute yearly transitions}
+        \resumeItem{Reprofiled the stockroom to streamline productivity and location accuracy by 20\%}
+        \resumeItem{Implemented smarter anti-theft measures leading to \$50k less department theft}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+  \resumeSubHeadingListEnd
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Kotlin, Swift, JavaScript, TypeScript, Python, C/C++, SQL (Postgres), HTML/CSS} \\
+     \textbf{Web}{: React, Next.js, Node.js, Express, Jest, MaterialUI, GraphQL, REST} \\
+     \textbf{Mobile}{: XML, Compose, JUnit, SwiftUI, React Native} \\
+     \textbf{Dev Tools}{: Git, Docker, Google Cloud Platform, Github Actions CI}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
