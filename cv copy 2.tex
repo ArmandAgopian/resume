@@ -1,0 +1,220 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+\usepackage{multicol}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Armand Agopian} \\ \vspace{1pt}
+    \small \href{tel:+19254370071}{925-437-0071} $|$ 
+    \href{mailto:armandagopian457@gmail.com}{\underline{armandagopian457@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/armandagopian}{\underline{linkedin.com/in/armandagopian}}
+\end{center}
+
+\vspace{-0.8cm}
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of California, Santa Cruz}{Mar 2023}
+      {Computer Science, BA}{Dean's Honors W23 - 3.85 GPA}
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{WeatherML}  \emph{}}{}
+          \resumeItemListStart
+            \resumeItem{Developed on-demand, hyperlocal, long-term weather prediction models}
+            \resumeItem{Models are created from a user's SMS using Twilio with location and prediciton date, sent to an Express server}
+            \resumeItem{Location details are sent to a Google BigQuery Time Series model, including weather data from NOAA}
+            \resumeItem{Each model is generalized within their S2 geocell, and cached to reduce computation costs}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Yumbai - Online Marketplace} \emph{}}{}
+          \resumeItemListStart
+            \resumeItem{Led a team of 5 developers to create an e-commerce platform organized using agile principles and microservices}
+            \resumeItem{Built a GraphQL api for CRUD, live chat, image upload to Cloudinary, moderating, filtering, and sales statistics}
+            \resumeItem{Fully authenticated and protected routes for separate User, Moderator, and Admin sites with SSO support}
+            \resumeItem{Fully unit and e2e tested using Jest and Playwright}
+            \resumeItem{Managed 13 containerized microservices using Docker and Postgres}
+            \resumeItem{Implemented CI/CD using Github Actions, maintaining testinng, linting, and containzerization}
+          \resumeItemListEnd
+          \resumeProjectHeading
+          {\textbf{FIRST Robotics Competition - Founder, Captain}  \emph{}}{}
+          \resumeItemListStart
+            \resumeItem{Founded and led a team of 40 students to design a 135-lb robot in 6 weeks to achieve FRC objectives at UC Davis each year for 4 years}
+            \resumeItem{Guided team to develop the requirements and project scope}
+            \resumeItem{Created autonomous algorithms in Java and OpenCV to perform required tasks duruing gameplay}
+            \resumeItem{Implemented tools for efficient team collaboration using: GSuite, Slack, and Github}
+            \resumeItem{Maintained team sponsorships with Google and Apple}
+          \resumeItemListEnd
+        \resumeProjectHeading
+          {\textbf{Homelab}  \emph{}}{}
+          \resumeItemListStart
+          \resumeItem{Created a 4-node K3s cluster using Proxmox}
+          \resumeItem{Ingress created using Traefik and cert-manager for public HTTPS access}
+          \resumeItem{Maintained a Cisco router and wired ethernet throughout the house for multiple AP coverage}
+          \resumeItem{Docker services including Tesla Dashcam, Grafana, Plex, Gitlab, and Minecraft}
+        \resumeItemListEnd
+        \resumeProjectHeading
+          {\textbf{USPS Passport Appointment Finder} \emph{}}{}
+          \resumeItemListStart
+            \resumeItem{Reverse-engineered the USPS API to create a platform to find and book passport appointments}
+            \resumeItem{Server can recurseively search any distance or time, where the official website is limited to 5 nearest locations}
+            \resumeItem{A Next.js site lits available appointments, where the user can directly book and receive an email confirmation}
+          \resumeItemListEnd
+        \resumeProjectHeading
+        {\textbf{Networked 3D Printers} \emph{}}{}
+        \resumeItemListStart
+          \resumeItem{Partnered with a high school to set up a 10-3D printer farm with automated networking and load balancing}
+          \resumeItem{Each printer has a Raspberry Pi for printer control and network access with custom LED status indicators}
+          \resumeItem{Express server load balances print queue, optimizing for certain features (dual extrusion, large print, etc)}
+          \resumeItem{Created public React website for viewing print status and uploading print files}
+        \resumeItemListEnd
+    \resumeSubHeadingListEnd
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Fulfillment Operations Team Leader}{May 2019 -- Sep 2022}
+      {Target}{}
+      \resumeItemListStart
+        \resumeItem{Led a team of 140 employees to meet daily operational goals within a \$100MM location within the online fulfillment departments}
+        \resumeItem{Designed order process dashboards for company-wide, real-time tracking of key metrics, bringing guest wait times down by 250\%}
+        \resumeItem{Led store/department walks with district store director}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+  \resumeSubHeadingListEnd
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Kotlin, Swift, JavaScript, TypeScript, Python, C/C++, SQL (Postgres), HTML/CSS} \\
+     \textbf{Web}{: React, Next.js, Node.js, Express, Jest, MaterialUI, GraphQL, REST} \\
+     \textbf{Mobile}{: Compose, JUnit, SwiftUI, React Native} \\
+     \textbf{Dev Tools}{: Kubernetes, Docker, Git, Google Cloud Platform, Github Actions CI}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
