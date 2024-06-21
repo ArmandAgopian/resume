@@ -146,7 +146,7 @@
 \section{Experience}
 \resumeSubHeadingListStart
 \resumeSubheading
-{Fulfillment Operations Team Leader}{Jun 2022 -- Sep 2022}
+{Fulfillment Operations Lead}{Jun 2022 -- Sep 2022}
 {Target}{}
 \resumeItemListStart
 \resumeItem{Led a team of 140 employees to meet daily operational goals within a \$100MM location within the online fulfillment departments}
@@ -157,7 +157,7 @@
 \resumeItemListEnd
 
 \resumeSubheading
-{Service \& Engagement Team Leader}{Dec 2020 -- Jun 2022}
+{Service \& Engagement Lead}{Dec 2020 -- Jun 2022}
 {Target}{}
 \resumeItemListStart
 \resumeItem{Managed a team of 120 team members/leaders within the front-end departments}
@@ -187,69 +187,63 @@
 %-------------------------------------------
 \resumeSubHeadingListEnd
 
-%-----------PROJECTS-----------
 \section{Projects}
 \resumeSubHeadingListStart
 \resumeProjectHeading
 {\textbf{WeatherML} $|$ \emph{Machine Learning, BigQuery, Express, Twilio}}{}
 \resumeItemListStart
-\resumeItem{Developed on-demand, hyperlocal, long-term weather prediction models}
-\resumeItem{Models are created from a user's SMS using Twilio with location and prediciton date, sent to an Express server}
-\resumeItem{Location details are sent to a Google BigQuery Time Series model, including weather data from NOAA}
-\resumeItem{Each model is generalized within their S2 geocell, and cached to reduce computation costs}
+\resumeItem{Developed on-demand, hyperlocal, long-term weather prediction models using user-provided SMS models}
+\resumeItem{Processed location details with Google BigQuery and NOAA data to create Time Series models}
+\resumeItem{Generalized models within S2 geocells, cached to reduce computation costs}
 \resumeItemListEnd
 
 \resumeProjectHeading
 {\textbf{Yumbai - Online Marketplace} $|$ \emph{Typescript, Next.js, GraphQL, Github Actions, TypeGraphQL, MaterialUI}}{}
 \resumeItemListStart
-\resumeItem{Led a team of 5 developers to create an e-commerce platform organized using agile principles and microservices}
-\resumeItem{Built a GraphQL api for CRUD, live chat, image upload to Cloudinary, moderating, filtering, and sales statistics}
-\resumeItem{Fully authenticated and protected routes for separate User, Moderator, and Admin sites with SSO support}
+\resumeItem{Led a team of 5 developers to create an e-commerce platform using agile principles and microservices}
+\resumeItem{Built a GraphQL api for CRUD, live chat, image upload to AWS S3, moderating, filtering, and sales statistics}
+\resumeItem{Implemented SSO support with authenticated and protected routes for different user/admin roles}
 \resumeItem{Fully unit and e2e tested using Jest and Playwright}
-\resumeItem{Managed 13 containerized microservices using Docker}
+\resumeItem{Managed 13 containerized microservices using Docker, deployed on an AWS EC2 instance}
 \resumeItem{Implemented CI/CD using Github Actions, maintaining testinng, linting, and containzerization}
-\resumeItemListEnd
-
-\resumeProjectHeading
-{\textbf{Networked 3D Printers} $|$ \emph{Raspberry Pi, Express, REST, React}}{}
-\resumeItemListStart
-\resumeItem{Partnered with a high school to set up a 10-3D printer farm with automated networking and load balancing}
-\resumeItem{Each printer has a Raspberry Pi for printer control and network access with custom LED status indicators}
-\resumeItem{Express server load balances print queue, optimizing for certain features (dual extrusion, large print, etc)}
-\resumeItem{Created public React website for viewing print status and uploading print files}
 \resumeItemListEnd
 
 \resumeProjectHeading
 {\textbf{USPS Passport Appointment Finder} $|$ \emph{Python, REST, Next.js}}{}
 \resumeItemListStart
 \resumeItem{Reverse-engineered the USPS API to create a platform to find and book passport appointments}
-\resumeItem{Server can recurseively search any distance or time, where the official website is limited to 5 nearest locations}
-\resumeItem{A Next.js site lits available appointments, where the user can directly book and receive an email confirmation}
+\resumeItem{Enabled recursive searches beyond the official 5 nearest locations limit}
+\resumeItem{Created a Next.js site for listing appointments and booking with email confirmations}
+\resumeItem{Implemented CI/CD for testing and deployment to Vercel}
 \resumeItemListEnd
 
 \resumeProjectHeading
-{\textbf{FIRST Robotics Competition - Founder, Captain} $|$ \emph{Java, OpenCV}}{}
+{\textbf{FIRST Robotics Competition - Founder, Captain, Mentor} $|$ \emph{Java, OpenCV}}{2017 - 2021}
 \resumeItemListStart
-\resumeItem{Founded and led a team of 40 students to design a 135-lb robot in 6 weeks to achieve FRC objectives at UC Davis each year for 4 years}
-\resumeItem{Guided team to develop the requirements and project scope}
-\resumeItem{Created autonomous algorithms in Java and OpenCV to perform required tasks duruing gameplay}
-\resumeItem{Implemented tools for efficient team collaboration using: GSuite, Slack, and Github}
-\resumeItem{Maintained team sponsorships with Google and Apple}
-\resumeItemListEnd
-
-\resumeProjectHeading
-{\textbf{TeamLink} $|$ \emph{}}{}
-\resumeItemListStart
-\resumeItem{}
+\resumeItem{Founded a team of 40 students to design a 135-lb robot in 6 weeks for annual FRC objectives at UC Davis}
+\resumeItem{Developed autonomous algorithms in Java and OpenCV for gameplay tasks}
+\resumeItem{Designed robots with tank drive platforms, CNC milled parts, and 3D printed spares}
+\resumeItem{4 robots performed ball shooting, gear depositing, box lifting, and rope climbing}
+\resumeItem{Implemented team collaboration tools: GSuite, Slack, and Github}
+\resumeItem{Secured team sponsorships from Google and Apple}
 \resumeItemListEnd
 
 \resumeProjectHeading
 {\textbf{Homelab} $|$ \emph{Proxmox, Kubernetes, Traefik, Docker}}{}
 \resumeItemListStart
 \resumeItem{Created a 4-node K3s cluster using Proxmox}
-\resumeItem{Ingress created using Traefik and cert-manager for public HTTPS access}
-\resumeItem{Maintained a Cisco router and wired ethernet throughout the house for multiple AP coverage}
-\resumeItem{Docker services including Tesla Dashcam, Grafana, Plex, Gitlab, and Minecraft}
+\resumeItem{Configured ingress with Traefik and cert-manager for public HTTPS access}
+\resumeItem{Maintained a Cisco router and wired ethernet throughout the house for multi-AP coverage}
+\resumeItem{Docker services including Tesla Dashcam, Grafana, Plex, Gitlab, Factorio, and Minecraft}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Networked 3D Printers} $|$ \emph{Raspberry Pi, Express, REST, React}}{}
+\resumeItemListStart
+\resumeItem{Partnered with a high school to set up a 10-3D printer farm with automated networking and load balancing}
+\resumeItem{Equipped each printer with a Raspberry Pi, camera, and custom LED strips for remote control and monitoring}
+\resumeItem{Express server load balances print queue, optimizing for certain features (dual extrusion, large print, etc)}
+\resumeItem{Developed a React website for viewing print status and uploading files}
 \resumeItemListEnd
 \resumeSubHeadingListEnd
 
@@ -257,10 +251,10 @@
 \section{Technical Skills}
 \begin{itemize}[leftmargin=0.15in, label={}]
 	\small{\item{
-	      \textbf{Languages}{: Java, Kotlin, Swift, JavaScript, TypeScript, Python, C/C++, SQL (Postgres), HTML/CSS} \\
+	      \textbf{Languages}{: Java, Kotlin, Swift, JavaScript, TypeScript, Python, C/C++, SQL (Postgres), MongoDB, HTML/CSS} \\
 	      \textbf{Web}{: React, Next.js, Node.js, Express, Jest, MaterialUI, GraphQL, REST} \\
 	      \textbf{Mobile}{: XML, Compose, JUnit, SwiftUI, React Native} \\
-	      \textbf{Dev Tools}{: Git, Docker, Google Cloud Platform, Github Actions CI}
+	      \textbf{Dev Tools}{: Git, Docker, Google Cloud Platform, AWS, Github Actions CI}
 	      }}
 \end{itemize}
 
