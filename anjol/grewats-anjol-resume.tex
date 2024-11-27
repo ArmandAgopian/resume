@@ -1,0 +1,214 @@
+%-------------------------
+% Resume in Latex
+% Author: Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License: MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+\usepackage{multicol}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+%\usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{inter}
+% \usepackage[sfdefault]{roboto}
+%\usepackage[sfdefault]{noto-sans}
+%\usepackage[sfdefault]{helvet}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generated pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeReference}[3]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \\
+      \textit{\small#2} & \\
+      #3 & \\
+    \end{tabular*}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+	\textbf{\Huge \scshape Anjol Grewats} \\ \vspace{1pt}
+	\small \href{tel:+19259513259}{925-951-3259} $|$
+	\href{mailto:grewatsanjol@gmail.com}{\underline{grewatsanjol@gmail.com}} $|$
+	\href{https://www.linkedin.com/in/anjol-grewats-b38aa3241/}{\underline{linkedin.com/in/anjolgrewats}}
+\end{center}
+
+\vspace{-0.8cm}
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Los Medanos College}{Aug 2019 - Present}
+{Associate of Arts (A.A.), Psychology}{X.XX GPA}
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Security Specialist}{Sep 2022 - Present}
+{Target}{}
+\resumeItemListStart
+\resumeItem{Collaborated with a team of 7 to meet security goals at a \$100M, 160,000+ sq. ft. high-risk retail store}
+\resumeItem{Monitored security systems and conducted routine inspections to ensure safety compliance}
+\resumeItem{Responded promptly to safety incidents and coordinated with law enforcement as needed}
+\resumeItem{Maintained accurate records of incidents and prepared detailed reports}
+\resumeItem{Trained team members on security protocols and emergency procedures}
+\resumeItemListEnd
+
+\resumeSubheading
+{Checkout Advocate}{Sep 2021 -- Sep 2022}
+{Target}{}
+\resumeItemListStart
+\resumeItem{Worked with a team of 120 employees/leaders across the front-end departments}
+\resumeItem{Trained new employees on the register, self-checkout, and guest service}
+\resumeItem{Increased guest satisfaction by 10\% by resolving guest issues during returns}
+\resumeItem{Implemented a "guest first" approach, boosting customer loyalty by 18\%}
+\resumeItem{Handled cash flow and auditing the checklane at store close in the cash office}
+\resumeItemListEnd
+
+\resumeSubheading
+{Beauty Consultant}{Nov 2019 - Sep 2021}
+{Target}{}
+\resumeItemListStart
+\resumeItem{Worked with a team of 5 to maintain the beauty department}
+\resumeItem{Increased productivity and location accuracy by 20\% by reorganizing the stockroom}
+\resumeItem{Reduced department theft by \$20k by implementing spider wraps and RFID tags}
+\resumeItem{Improved cleanliness and maintained salesfloor zoning, including setting up endcaps and displays}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------ACHIEVEMENTS-----------
+\section{Achievements}
+\resumeSubHeadingListStart
+\resumeReference
+  {Ethan Little} % Name
+  {Store Manager at Target} % Position
+  {925-231-5904} % Contact Information
+\resumeSubHeadingListEnd
+
+%-----------REFERENCES-----------
+\section{References}
+\resumeSubHeadingListStart
+\resumeReference
+  {Ethan Little} % Name
+  {Store Manager at Target} % Position
+  {925-231-5904} % Contact Information
+
+\resumeReference
+  {Vanessa Abbott} % Name
+  {Store Manager at Target} % Position
+  {408-887-9255} % Contact Information
+\resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+	\small{\item{
+    \textbf{Leadership}{: Team Management, Seek to Understand, Conflict Resolution, Decision Making} \\
+    \textbf{Communication}{: Public Speaking, Report Writing, Active Listening} \\
+    \textbf{Problem Solving}{: Critical Thinking, Creativity, Adaptability, Flexibility} \\
+    \textbf{Time Management}{: Prioritization, Detail Oriented, Strategic Planning, Goal Setting, Meeting Deadlines} \\
+    }}
+\end{itemize}
+
+%-------------------------------------------
+\end{document}
