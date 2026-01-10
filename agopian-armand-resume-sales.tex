@@ -21,7 +21,6 @@
 \input{glyphtounicode}
 \usepackage{multicol}
 
-
 %----------FONT OPTIONS----------
 % sans-serif
 % \usepackage[sfdefault]{FiraSans}
@@ -32,6 +31,9 @@
 % serif
 % \usepackage{CormorantGaramond}
 % \usepackage{charter}
+% \usepackage[T1]{fontenc}
+% \renewcommand{\familydefault}{\sfdefault}
+% \usepackage{helvet}
 
 
 \pagestyle{fancy}
@@ -120,22 +122,37 @@
 \end{center}
 
 \vspace{-0.8cm}
-%-----------EDUCATION-----------
-\section{Education}
-\resumeSubHeadingListStart
-\resumeSubheading
-{University of California, Santa Cruz}{Mar 2023}
-{Bachelor of Arts (B.A.), Computer Science}{Dean's Honors W23 - 3.85 GPA}
-\resumeSubHeadingListEnd
-
 %-----------EXPERIENCE-----------
 \section{Experience}
 \resumeSubHeadingListStart
+
+\resumeSubheading
+{AI Tutor}{Feb 2025 - Dec 2025}
+{xAI}{}
+\resumeItemListStart
+\resumeItem{Led pilot teams to develop new validation projects for Grok DeepSearch, DeeperSearch, Heavy, and Agentic}
+\resumeItem{Enhanced agentic capabilities in the \textit{grok-code-fast} model, improving autonomous code generation}
+\resumeItem{Oversaw L1/L2 quality assurance for reasoning and code tasks, improving data accuracy and reliability}
+\resumeItem{Curated NLP datasets and refined AI-generated Python and JavaScript code to boost model accuracy}
+\resumeItem{Improved Grok's web crawler and navigation, expanding site coverage and enabling JavaScript execution}
+\resumeItem{Supported Grok 4 Voice integration with Tesla, refining conversational AI for seamless in-vehicle user experiences}
+\resumeItemListEnd
+
+\resumeSubheading
+{Founding Engineer}{Sep 2022 - Jan 2025}
+{Yumbai - Online Marketplace}{}
+\resumeItemListStart
+\resumeItem{Founded and led a 5-person team to build a scalable e-commerce platform (Next.js, TypeScript Kotlin, SwiftUI)}
+\resumeItem{Designed and implemented APIs, live chat, analytics, and media uploads (GraphQL Mesh, AWS S3)}
+\resumeItem{Deployed 13 containerized microservices on AWS CI/CD and monitoring marketplace health}
+\resumeItem{Delivered WCAG compliance, AI spam filtering \& translations, and SEO optimizations through Cloudflare}
+\resumeItemListEnd
+
 \resumeSubheading
 {Fulfillment Operations Lead}{Jun 2022 -- Sep 2022}
 {Target}{}
 \resumeItemListStart
-\resumeItem{Directed a team of 140 employees to achieve daily operational objectives at a \$100MM, 160,000+ sqft retail store}
+\resumeItem{Led 240 employees within a \$105+ million, 160K+ sqft retail store to achieve daily performance goals}
 \resumeItem{Spearheaded digital business expansion, resulting in a 200\% increase in online sales}
 \resumeItem{Developed real-time, company-wide order process dashboards, reducing guest wait times down by 250\%}
 \resumeItem{Realigned all fulfillment departments under a single leadership structure, increasing team efficiency by 35\%}
@@ -155,7 +172,7 @@
 {Specialty Sales Consultant (Tech and Beauty)}{May 2019 -- Dec 2020}
 {Target}{}
 \resumeItemListStart
-\resumeItem{Led tech and beauty teams of 15 to achieve 77\% YoY growth}
+\resumeItem{Awarded "Best Comp Store in Tech \& Beauty Nationwide" (FY2020) with 106\% YoY growth}
 \resumeItem{Conducted technology trend analysis to provide personalized guest solutions and build trust}
 \resumeItem{Collaborated with vendors to plan and execute annual product transitions}
 \resumeItem{Streamlined stockroom operations, increasing productivity and location accuracy by 20\%}
@@ -175,32 +192,6 @@
 
 \section{Projects}
 \resumeSubHeadingListStart
-\resumeProjectHeading
-{\textbf{WeatherML} $|$ \emph{Machine Learning, BigQuery, Express, Twilio}}{}
-\resumeItemListStart
-\resumeItem{Developed on-demand, hyperlocal, long-term weather prediction models using user-provided SMS}
-\resumeItem{Processed location details with Google BigQuery and NOAA data to create Time Series models}
-\resumeItem{Generalized models within S2 geocells, cached to reduce computation costs}
-\resumeItemListEnd
-
-\resumeProjectHeading
-{\textbf{Yumbai - Online Marketplace} $|$ \emph{Typescript, Next.js, GraphQL, GitHub Actions, TypeGraphQL, SwiftUI}}{}
-\resumeItemListStart
-\resumeItem{Led a team of 5 developers to create an e-commerce platform using agile principles and microservices}
-\resumeItem{Built a GraphQL API for CRUD, live chat, image upload to AWS S3, moderating, filtering, and sales statistics}
-\resumeItem{Implemented SSO support with salted \& hashed authentication for different user/admin roles}
-\resumeItem{Built a SwiftUI client for user-facing features using Test Driven Development and MVVM architecture}
-\resumeItemListEnd
-
-\resumeProjectHeading
-{\textbf{FIRST Robotics Competition - Founder, Captain, Mentor} $|$ \emph{Java, OpenCV}}{2016 - 2019}
-\resumeItemListStart
-\resumeItem{Founded a team of 40 students to design a 135-lb robot in 6 weeks for annual FRC objectives at UC Davis}
-\resumeItem{Developed autonomous algorithms in Java and OpenCV for gameplay tasks}
-\resumeItem{Designed robots with tank drive platforms, CNC-milled parts, and 3D-printed spares}
-\resumeItem{Implemented team collaboration tools: GSuite, Slack, and GitHub}
-\resumeItem{Secured team sponsorships from Google and Apple}
-\resumeItemListEnd
 
 \resumeProjectHeading
 {\textbf{Homelab} $|$ \emph{Proxmox, Kubernetes, Traefik, Docker, Raspberry PI, }}{}
@@ -210,6 +201,14 @@
 \resumeItem{Docker services including Tesla Dashcam, Grafana, Plex, Gitlab, Factorio, and Minecraft}
 \resumeItem{Set up a 10-3D printer farm with remote monitoring, automated networking, and load balancing}
 \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{University of California, Santa Cruz}{Mar 2023}
+{Bachelor's in Computer Science}{Dean's Honors}
 \resumeSubHeadingListEnd
 
 %-----------PROGRAMMING SKILLS-----------
